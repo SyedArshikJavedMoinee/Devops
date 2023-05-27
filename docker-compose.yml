@@ -18,4 +18,4 @@ services:
       - mongodb
 
 volumes:
-  data:
+  data:
