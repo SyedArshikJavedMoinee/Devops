@@ -8,7 +8,7 @@
     "server": "nodemon backend/server.js",
     "client": "npm start --prefix frontend",
     "dev": "concurrently \"npm run server\" \"npm run client\"",
-    "heroku-postbuild": "NPM_CONFIG_PRODUCTION=false npm install --prefix frontend && npm run build --prefix frontend"
+    "test": "mocha --reporter spec ./tests/ --exit"
   },
   "author": "ABC",
   "license": "MIT",
@@ -20,7 +20,9 @@
     "express": "^4.17.2",
     "express-async-handler": "^1.2.0",
     "jsonwebtoken": "^8.5.1",
-    "mongoose": "^6.1.6"
+    "mocha": "^10.2.0",
+    "mongoose": "^6.1.6",
+    "selenium-webdriver": "^4.9.2"
   },
   "devDependencies": {
     "nodemon": "^2.0.15"

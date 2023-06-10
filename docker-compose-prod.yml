@@ -14,7 +14,7 @@ services:
   server:
     image: 'arshikjaved/devopsrepo'
     ports:
-      - "8000:5000"
+      - "5000:5000"
     restart: always
     depends_on:
       - mongodb
